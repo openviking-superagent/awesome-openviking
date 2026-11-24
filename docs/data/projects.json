@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14",
+  "updated": "2026-11-24",
   "projects": [
     {
       "id": "dsh-openviking-expand",
@@ -16,6 +16,23 @@
       ],
       "maintainer": "zrwangems",
       "image": "images/projects/dsh-openviking-expand.png"
+    },
+    {
+      "id": "agy-openviking",
+      "name": "OpenViking for Antigravity CLI",
+      "repository": "JamCh01/agy-openviking",
+      "url": "https://github.com/JamCh01/agy-openviking",
+      "category": "community",
+      "description": "Recall context, capture conversation turns, and browse viking:// memories, skills, and rules in Google Antigravity CLI (agy). Bridges agy lifecycle hooks, subagents, skills, and stdio MCP to OpenViking REST and Streamable HTTP APIs via a single Rust binary.",
+      "descriptionZh": "在 Google Antigravity CLI（agy）中自动召回上下文、沉淀对话轮次并浏览 viking:// 记忆、技能与规则。通过单一 Rust 二进制将 agy 钩子、子智能体、技能与 MCP 桥接至 OpenViking。",
+      "tags": [
+        "Antigravity CLI",
+        "Plugin",
+        "MCP",
+        "Rust"
+      ],
+      "maintainer": "JamCh01",
+      "image": "images/projects/agy-openviking.png"
     },
     {
       "id": "deer-flow",

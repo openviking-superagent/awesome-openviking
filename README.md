@@ -30,6 +30,7 @@ Built by the community, for real OpenViking workflows.
 | Preview | Project |
 | :---: | --- |
 | <a href="https://github.com/zrwangems/dsh-openviking-expand"><img src="images/projects/dsh-openviking-expand.png" width="240" alt="OpenViking Expand for DSH"></a> | **[OpenViking Expand for DSH](https://github.com/zrwangems/dsh-openviking-expand)** — Bring OpenViking Studio and a browsable viking:// sidebar into DeepSeek Harness. Preview files and L0/L1 summaries, then reference a URI in the current chat without leaving DSH.<br>`DSH` `Plugin` `Studio` · Maintained by [@zrwangems](https://github.com/zrwangems) |
+| <a href="https://github.com/JamCh01/agy-openviking"><img src="images/projects/agy-openviking.png" width="240" alt="OpenViking for Antigravity CLI"></a> | **[OpenViking for Antigravity CLI](https://github.com/JamCh01/agy-openviking)** — Recall context, capture conversation turns, and browse viking:// memories, skills, and rules in Google Antigravity CLI (agy). Bridges agy lifecycle hooks, subagents, skills, and stdio MCP to OpenViking REST and Streamable HTTP APIs via a single Rust binary.<br>`Antigravity CLI` `Plugin` `MCP` `Rust` · Maintained by [@JamCh01](https://github.com/JamCh01) |
 <!-- PROJECTS:COMMUNITY:END -->
 ## Partner Projects
 
