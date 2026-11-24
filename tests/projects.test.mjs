@@ -20,6 +20,10 @@ test('all entries have complete, valid content', async () => {
     assert.ok(project.description.length >= 50 && project.description.length <= 300);
     assert.ok(project.descriptionZh.length >= 20 && project.descriptionZh.length <= 180);
     assert.ok(project.tags.length >= 2 && project.tags.length <= 4);
+    if (project.tagsZh) {
+      assert.equal(project.tagsZh.length, project.tags.length);
+      for (const tag of project.tagsZh) assert.ok(typeof tag === 'string' && tag.length > 0);
+    }
     assert.ok(project.maintainer.length > 0);
     assert.equal(project.image, `images/projects/${project.id}.png`);
     const image = await readFile(new URL(`../docs/${project.image}`, import.meta.url));
@@ -35,6 +39,17 @@ test('initial required projects are present', () => {
   const repositories = new Set(data.projects.map((p) => p.repository));
   for (const repository of ['bytedance/deer-flow', 'NoKV-Lab/NoKV', 'loopx-project/loopx', 'NousResearch/hermes-agent', 'NVIDIA/cuvs', 'zrwangems/dsh-openviking-expand']) {
     assert.ok(repositories.has(repository), `Missing ${repository}`);
+  }
+});
+
+test('Chinese README shows each project\'s own Chinese tags', async () => {
+  const zhReadme = await readFile(new URL('../README.zh-CN.md', import.meta.url), 'utf8');
+  for (const project of data.projects.filter((entry) => entry.tagsZh)) {
+    const row = zhReadme.split('\n').find((line) => line.includes(`(${project.url})`));
+    assert.ok(row, `Missing Chinese README row for ${project.id}`);
+    for (const tag of project.tagsZh) {
+      assert.ok(row.includes(`\`${tag}\``), `${project.id} Chinese row is missing tag ${tag}`);
+    }
   }
 });
 

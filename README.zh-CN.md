@@ -12,7 +12,7 @@
 | 预览 | 项目 |
 | :---: | --- |
 | <a href="https://github.com/zrwangems/dsh-openviking-expand"><img src="images/projects/dsh-openviking-expand.png" width="240" alt="OpenViking Expand for DSH"></a> | **[OpenViking Expand for DSH](https://github.com/zrwangems/dsh-openviking-expand)** — 把 OpenViking Studio 和 viking:// 文件树带进 DeepSeek Harness。可预览文件与 L0/L1 摘要，并将 URI 直接引用到当前会话。<br>`DSH` `插件` `Studio` · 由 [@zrwangems](https://github.com/zrwangems) 维护 |
-| <a href="https://github.com/JamCh01/agy-openviking"><img src="images/projects/agy-openviking.png" width="240" alt="OpenViking for Antigravity CLI"></a> | **[OpenViking for Antigravity CLI](https://github.com/JamCh01/agy-openviking)** — 在 Google Antigravity CLI（agy）中自动召回上下文、沉淀对话轮次并浏览 viking:// 记忆、技能与规则。通过单一 Rust 二进制将 agy 钩子、子智能体、技能与 MCP 桥接至 OpenViking。<br>`DSH` `插件` `Studio` · 由 [@JamCh01](https://github.com/JamCh01) 维护 |
+| <a href="https://github.com/JamCh01/agy-openviking"><img src="images/projects/agy-openviking.png" width="240" alt="OpenViking for Antigravity CLI"></a> | **[OpenViking for Antigravity CLI](https://github.com/JamCh01/agy-openviking)** — 在 Google Antigravity CLI（agy）中自动召回上下文、沉淀对话轮次并浏览 viking:// 记忆、技能与规则。通过单一 Rust 二进制将 agy 钩子、子智能体、技能与 MCP 桥接至 OpenViking。<br>`Antigravity CLI` `插件` `MCP` `Rust` · 由 [@JamCh01](https://github.com/JamCh01) 维护 |
 <!-- PROJECTS:COMMUNITY:END -->
 ## 合作项目
 

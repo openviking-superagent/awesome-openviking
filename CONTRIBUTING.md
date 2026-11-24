@@ -19,7 +19,7 @@ This list is for discovery, not endorsement. Entries may be edited for clarity o
 1. Fork this repository and create a branch.
 2. Add one object to [`docs/data/projects.json`](docs/data/projects.json). Use `community` for community work and `partner` for established OpenViking partner projects.
 3. Write a concise English description and a Chinese `descriptionZh`. Lead with what the project lets someone do, then mention the OpenViking connection. Avoid “best”, “revolutionary”, and similar claims.
-4. Add two to four useful tags. Save a 1200 × 600 project preview as `docs/images/projects/<project-id>.png`. The repository's GitHub OpenGraph image is a good default; use a project screenshot when it communicates the work better.
+4. Add two to four useful tags. Projects listed under `community` also take an optional `tagsZh` array with the Chinese tag names; without it the Chinese README shows the entry without tags. Save a 1200 × 600 project preview as `docs/images/projects/<project-id>.png`. The repository's GitHub OpenGraph image is a good default; use a project screenshot when it communicates the work better.
 5. Run the checks:
 
    ```sh

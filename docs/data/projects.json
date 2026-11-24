@@ -14,6 +14,11 @@
         "Plugin",
         "Studio"
       ],
+      "tagsZh": [
+        "DSH",
+        "插件",
+        "Studio"
+      ],
       "maintainer": "zrwangems",
       "image": "images/projects/dsh-openviking-expand.png"
     },
@@ -28,6 +33,12 @@
       "tags": [
         "Antigravity CLI",
         "Plugin",
+        "MCP",
+        "Rust"
+      ],
+      "tagsZh": [
+        "Antigravity CLI",
+        "插件",
         "MCP",
         "Rust"
       ],
