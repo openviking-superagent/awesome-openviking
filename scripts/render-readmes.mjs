@@ -8,9 +8,10 @@ function table(category, language) {
   const rows = projects.filter((project) => project.category === category).map((project) => {
     const description = zh ? project.descriptionZh : project.description;
     const website = project.homepage ? ` · [${zh ? (project.id === 'cuvs' ? '文档' : '官网') : (project.id === 'cuvs' ? 'Documentation' : 'Website')}](${project.homepage})` : '';
-    const tags = zh ? '' : `<br>${project.tags.map((tag) => `\`${tag}\``).join(' ')}`;
-    const maintainer = !zh && category === 'community' ? ` · Maintained by [@${project.maintainer}](https://github.com/${project.maintainer})` : (zh && category === 'community' ? `<br>\`DSH\` \`插件\` \`Studio\` · 由 [@${project.maintainer}](https://github.com/${project.maintainer}) 维护` : '');
-    return `| <a href="${project.url}"><img src="${project.image}" width="240" alt="${project.name}"></a> | **[${project.name}](${project.url})**${website} — ${description}${tags}${maintainer} |`;
+    const tags = (zh ? project.tagsZh : project.tags) || [];
+    const tagline = tags.length > 0 ? `<br>${tags.map((tag) => `\`${tag}\``).join(' ')}` : '';
+    const maintainer = category === 'community' ? `${tagline}${zh ? ' · 由' : ' · Maintained by'} [@${project.maintainer}](https://github.com/${project.maintainer})${zh ? ' 维护' : ''}` : tagline;
+    return `| <a href="${project.url}"><img src="${project.image}" width="240" alt="${project.name}"></a> | **[${project.name}](${project.url})**${website} — ${description}${maintainer} |`;
   });
   return `| ${zh ? '预览' : 'Preview'} | ${zh ? '项目' : 'Project'} |\n| :---: | --- |\n${rows.join('\n')}`;
 }
